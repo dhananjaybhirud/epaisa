@@ -2,16 +2,26 @@
   <div class="sidebar-heading">Start Bootstrap </div>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link active" >Active</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" >Link</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" >Link</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Disabled</a>
+      <a class="nav-link"  (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed">Disabled</a>
+      <ul class="nav flex-column" [ngbCollapse]="isCollapsed">
+        <li class="nav-item">
+          <a class="nav-link active" >Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Link</a>
+        </li>
+      </ul>
+
     </li>
   </ul>
 </div>
