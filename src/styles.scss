@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
 
@@ -42,6 +44,9 @@ a{
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
+.text-pink{
+  color: #ed2890;
+}
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
@@ -64,5 +69,3 @@ a{
   min-height: 100vh;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
