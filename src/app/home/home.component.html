@@ -4,11 +4,11 @@
      <!-- Change tab to role====> -->
      <div class="row">
        <div class="col-md">
-        <form class="form-inline">
+        <form class="form-inline ">
           <div class="form-group hidden">
-            <div class="input-group">
+            <div class="input-group ">
               <input name="datepicker"
-                     class="form-control"
+                     class="form-control p-0 border-0"
                      ngbDatepicker
                      #datepicker="ngbDatepicker"
                      [autoClose]="'outside'"
@@ -31,7 +31,7 @@
           </div>
 
           <div class="form-group">
-            <div class="input-group">
+            <div class="input-group custom-range border border-dark">
               <input #dpFromDate
                      class="form-control" placeholder="yyyy-mm-dd"
                      name="dpFromDate"
@@ -43,7 +43,7 @@
                 [value]="formatter.format(toDate)"
                 (input)="toDate = validateInput(toDate, dpToDate.value)">
               <div class="input-group-append">
-                <button class="btn btn-outline-secondary calendar" (click)="datepicker.toggle()" type="button">
+                <button class="btn btn-outline-secondary calendar border-0" (click)="datepicker.toggle()" type="button">
                   <i class="fa fa-calendar text-pink" aria-hidden="true"></i>
                 </button>
               </div>
@@ -54,6 +54,31 @@
         </form>
 
        </div>
+       <div class="col-md">
+
+       </div>
+       <div class="col-md">
+
+      </div>
+      <div class="col-md">
+        <div ngbDropdown class="d-inline-block w-100">
+          <button class="align-items-center btn btn-outline-dark d-flex dropdown-toggle justify-content-between w-100" id="dropdownBasic1" ngbDropdownToggle>Tipout</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>Tipout</button>
+            <button ngbDropdownItem>No Tipout</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div ngbDropdown class="d-inline-block w-100">
+          <button class="align-items-center btn btn-outline-dark d-flex dropdown-toggle justify-content-between w-100" id="dropdownBasic1" ngbDropdownToggle>Export</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>*.pdf</button>
+            <button ngbDropdownItem>*.elxs</button>
+          </div>
+        </div>
+      </div>
+
      </div>
     </ng-template>
   </ngb-tab>
