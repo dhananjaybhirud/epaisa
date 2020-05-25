@@ -2,26 +2,82 @@
   <div class="sidebar-heading">Start Bootstrap </div>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <a class="nav-link active" >Active</a>
+      <a class="nav-link single" >Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" >Link</a>
+      <a class="nav-link" >Restaurant</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" >Link</a>
+      <a class="nav-link" >Sales</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed">Disabled</a>
+      <a class="nav-link" >Menus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" >Employees</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" >Customers</a>
+    </li>
+
+
+    <li class="nav-item">
+      <a class="nav-link active"  (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed">Reports</a>
       <ul class="nav flex-column" [ngbCollapse]="isCollapsed">
         <li class="nav-item">
-          <a class="nav-link active" >Active</a>
+          <a class="nav-link " >Sale</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" >Link</a>
+          <a class="nav-link active" >Labor</a>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" >Employee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" >Role</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" >Cashout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" >ADP Payroll</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" >Payroll</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Comp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Operating</a>
         </li>
       </ul>
 
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link single" >
+        Online Storefront
+        <div class="text-warning"><small>Coming Soon</small></div>
+      </a>
+    </li>
+    <li class="divider">
+      <!-- <a class="nav-link" >Account Settings</a> -->
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" >Account Settings</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link single" >Feedback</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link single" >Sign Out</a>
     </li>
   </ul>
 </div>
