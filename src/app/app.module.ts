@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { AsideComponent } from './aside/aside.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +19,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent
   ],
   imports: [
+    CommonModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgMultiSelectDropDownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
